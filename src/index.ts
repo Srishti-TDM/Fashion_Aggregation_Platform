@@ -1,12 +1,10 @@
-import { scrapeHM } from "./scrapers/hmScraper";
+import { seedProducts } from "./data/seedProducts";
 
 async function run() {
-  console.log("Fashion Aggregator Scraper Starting...");
+  console.log("Fashion Aggregator Starting...");
 
-  const products = await scrapeHM();
-
-  console.log("Products scraped:", products.length);
-  console.log(products);
+  console.log("Loaded products:", seedProducts.length);
+  console.log(seedProducts);
 }
 
 run();
